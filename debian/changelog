@@ -1,5 +1,5 @@
-libcm4all-http (0.1.0) unstable; urgency=low
+libcm4all-http (1.0) unstable; urgency=low
 
   * initial release
 
- --
+ -- Max Kellermann <mk@cm4all.com>  Mon, 08 Nov 2010 22:14:20 +0100
