@@ -1,0 +1,16 @@
+Source: libcm4all-http
+Section: non-free/libs
+Priority: optional
+Maintainer: Max Kellermann <mk@cm4all.com>
+Build-Depends: debhelper (>= 5), doxygen (>= 1.2)
+Standards-Version: 3.9.1
+
+Package: libcm4all-http-dev
+Section: non-free/libdevel
+Architecture: any
+Depends: pkg-config (>= 0.9.0)
+Description: Development files for libhttp
+ libhttp is a library which contains shared code for HTTP
+ implementations (both server and client).
+ .
+ This package contains development files.
