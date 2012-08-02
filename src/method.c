@@ -10,4 +10,6 @@ const char *http_method_to_string_data[HTTP_METHOD_INVALID] = {
     [HTTP_METHOD_POST] = "POST",
     [HTTP_METHOD_PUT] = "PUT",
     [HTTP_METHOD_DELETE] = "DELETE",
+    [HTTP_METHOD_OPTIONS] = "OPTIONS",
+    [HTTP_METHOD_TRACE] = "TRACE",
 };
