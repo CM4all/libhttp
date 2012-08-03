@@ -3,7 +3,7 @@ libcm4all-http (1.1) unstable; urgency=low
   * method: add missing HTTP methods OPTIONS, TRACE
   * method: add WebDAV methods
 
- --   
+ -- Max Kellermann <mk@cm4all.com>  Fri, 03 Aug 2012 11:33:02 -0000
 
 libcm4all-http (1.0) unstable; urgency=low
 
