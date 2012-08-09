@@ -4,7 +4,7 @@
 
 #include <http/status.h>
 
-const char *http_status_to_string_data[6][20] = {
+const char *http_status_to_string_data[6][40] = {
     [1] = {
         [HTTP_STATUS_CONTINUE - 100] = "100 Continue",
     },
@@ -45,6 +45,9 @@ const char *http_status_to_string_data[6][20] = {
         [HTTP_STATUS_UNSUPPORTED_MEDIA_TYPE - 400] = "415 Unsupported Media Type",
         [HTTP_STATUS_REQUESTED_RANGE_NOT_SATISFIABLE - 400] = "416 Requested Range Not Satisfiable",
         [HTTP_STATUS_EXPECTATION_FAILED - 400] = "417 Expectation failed",
+        [HTTP_STATUS_PRECONDITION_REQUIRED - 400] = "428 Precondition Required",
+        [HTTP_STATUS_TOO_MANY_REQUESTS - 400] = "429 Too Many Requests",
+        [HTTP_STATUS_REQUEST_HEADER_FIELDS_TOO_LARGE - 400] = "431 Request Header Fields Too Large",
     },
     [5] = {
         [HTTP_STATUS_INTERNAL_SERVER_ERROR - 500] = "500 Internal Server Error",
@@ -53,5 +56,6 @@ const char *http_status_to_string_data[6][20] = {
         [HTTP_STATUS_SERVICE_UNAVAILABLE - 500] = "503 Service Unavailable",
         [HTTP_STATUS_GATEWAY_TIMEOUT - 500] = "504 Gateway Timeout",
         [HTTP_STATUS_HTTP_VERSION_NOT_SUPPORTED - 500] = "505 HTTP Version Not Supported",
+        [HTTP_STATUS_NETWORK_AUTHENTICATION_REQUIRED - 500] = "511 Network Authentication Required",
     },
 };

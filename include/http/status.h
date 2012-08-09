@@ -43,15 +43,36 @@ typedef enum {
     HTTP_STATUS_UNSUPPORTED_MEDIA_TYPE = 415,
     HTTP_STATUS_REQUESTED_RANGE_NOT_SATISFIABLE = 416,
     HTTP_STATUS_EXPECTATION_FAILED = 417,
+
+    /**
+     * @see RFC 6585 (Additional HTTP Status Codes)
+     */
+    HTTP_STATUS_PRECONDITION_REQUIRED = 428,
+
+    /**
+     * @see RFC 6585 (Additional HTTP Status Codes)
+     */
+    HTTP_STATUS_TOO_MANY_REQUESTS = 429,
+
+    /**
+     * @see RFC 6585 (Additional HTTP Status Codes)
+     */
+    HTTP_STATUS_REQUEST_HEADER_FIELDS_TOO_LARGE = 431,
+
     HTTP_STATUS_INTERNAL_SERVER_ERROR = 500,
     HTTP_STATUS_NOT_IMPLEMENTED = 501,
     HTTP_STATUS_BAD_GATEWAY = 502,
     HTTP_STATUS_SERVICE_UNAVAILABLE = 503,
     HTTP_STATUS_GATEWAY_TIMEOUT = 504,
     HTTP_STATUS_HTTP_VERSION_NOT_SUPPORTED = 505,
+
+    /**
+     * @see RFC 6585 (Additional HTTP Status Codes)
+     */
+    HTTP_STATUS_NETWORK_AUTHENTICATION_REQUIRED = 511,
 } http_status_t;
 
-extern const char *http_status_to_string_data[6][20];
+extern const char *http_status_to_string_data[6][40];
 
 static inline bool
 http_status_is_valid(http_status_t status)
