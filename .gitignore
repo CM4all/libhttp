@@ -39,3 +39,9 @@ tags
 *.so
 \#*#
 *.pc
+
+debian/files
+debian/*.log
+debian/*.substvars
+debian/tmp
+debian/libcm4all-http-dev
