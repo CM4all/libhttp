@@ -18,6 +18,12 @@ typedef enum {
     HTTP_STATUS_NO_CONTENT = 204,
     HTTP_STATUS_RESET_CONTENT = 205,
     HTTP_STATUS_PARTIAL_CONTENT = 206,
+
+    /**
+     * @see RFC 4918 (WebDAV)
+     */
+    HTTP_STATUS_MULTI_STATUS = 207,
+
     HTTP_STATUS_MULTIPLE_CHOICES = 300,
     HTTP_STATUS_MOVED_PERMANENTLY = 301,
     HTTP_STATUS_FOUND = 302,
@@ -45,6 +51,21 @@ typedef enum {
     HTTP_STATUS_EXPECTATION_FAILED = 417,
 
     /**
+     * @see RFC 4918 (WebDAV)
+     */
+    HTTP_STATUS_UNPROCESSABLE_ENTITY = 422,
+
+    /**
+     * @see RFC 4918 (WebDAV)
+     */
+    HTTP_STATUS_LOCKED = 423,
+
+    /**
+     * @see RFC 4918 (WebDAV)
+     */
+    HTTP_STATUS_FAILED_DEPENDENCY = 424,
+
+    /**
      * @see RFC 6585 (Additional HTTP Status Codes)
      */
     HTTP_STATUS_PRECONDITION_REQUIRED = 428,
@@ -65,6 +86,11 @@ typedef enum {
     HTTP_STATUS_SERVICE_UNAVAILABLE = 503,
     HTTP_STATUS_GATEWAY_TIMEOUT = 504,
     HTTP_STATUS_HTTP_VERSION_NOT_SUPPORTED = 505,
+
+    /**
+     * @see RFC 4918 (WebDAV)
+     */
+    HTTP_STATUS_INSUFFICIENT_STORAGE = 507,
 
     /**
      * @see RFC 6585 (Additional HTTP Status Codes)

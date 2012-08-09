@@ -1,6 +1,7 @@
 libcm4all-http (1.2) unstable; urgency=low
 
   * status: implement RFC 6585 (Additional HTTP Status Codes)
+  * status: add WebDAV status codes
 
  --   
 
