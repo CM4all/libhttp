@@ -46,6 +46,7 @@ const char *http_status_to_string_data[6][40] = {
         [HTTP_STATUS_UNSUPPORTED_MEDIA_TYPE - 400] = "415 Unsupported Media Type",
         [HTTP_STATUS_REQUESTED_RANGE_NOT_SATISFIABLE - 400] = "416 Requested Range Not Satisfiable",
         [HTTP_STATUS_EXPECTATION_FAILED - 400] = "417 Expectation failed",
+        [HTTP_STATUS_I_M_A_TEAPOT - 400] = "418 I'm a teapot",
         [HTTP_STATUS_UNPROCESSABLE_ENTITY - 400] = "422 Unprocessable Entity",
         [HTTP_STATUS_LOCKED - 400] = "423 Locked",
         [HTTP_STATUS_FAILED_DEPENDENCY - 400] = "424 Failed Dependency",

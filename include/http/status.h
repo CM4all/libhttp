@@ -51,6 +51,11 @@ typedef enum {
     HTTP_STATUS_EXPECTATION_FAILED = 417,
 
     /**
+     * @see RFC 2324
+     */
+    HTTP_STATUS_I_M_A_TEAPOT = 418,
+
+    /**
      * @see RFC 4918 (WebDAV)
      */
     HTTP_STATUS_UNPROCESSABLE_ENTITY = 422,
