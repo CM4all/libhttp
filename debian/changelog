@@ -1,3 +1,9 @@
+libcm4all-http (1.2) unstable; urgency=low
+
+  * 
+
+ --   
+
 libcm4all-http (1.1) unstable; urgency=low
 
   * method: add missing HTTP methods OPTIONS, TRACE
