@@ -106,8 +106,10 @@ typedef enum {
 extern const char *http_status_to_string_data[6][40];
 
 static inline bool
-http_status_is_valid(http_status_t status)
+http_status_is_valid(http_status_t _status)
 {
+    const unsigned status = (unsigned)_status;
+
     return (status / 100) < sizeof(http_status_to_string_data) /
         sizeof(http_status_to_string_data[0]) &&
         status % 100 < sizeof(http_status_to_string_data[0]) /
