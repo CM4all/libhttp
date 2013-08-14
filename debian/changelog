@@ -1,6 +1,7 @@
 libcm4all-http (1.2.1) unstable; urgency=low
 
   * status: cast enum to unsigned before arithmetic
+  * header, http: C++ compatibility
 
  --   
 

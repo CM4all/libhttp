@@ -12,6 +12,9 @@
 #include <stdbool.h>
 #include <stddef.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 extern const char *http_status_to_string_data[6][20];
 
@@ -86,5 +89,9 @@ http_header_name_valid(const char *name);
  */
 bool
 http_header_is_hop_by_hop(const char *name);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
