@@ -1,5 +1,5 @@
 AC_PREREQ(2.60)
-AC_INIT(CM4all libhttp, 1.2.1, mk@cm4all.com, libcm4all-http)
+AC_INIT(CM4all libhttp, 1.2.2, mk@cm4all.com, libcm4all-http)
 AC_COPYRIGHT(Copyright 2006-2013 Content Management AG)
 AC_CONFIG_SRCDIR(src/method.c)
 AC_CONFIG_AUX_DIR(build)
