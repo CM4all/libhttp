@@ -126,32 +126,37 @@ http_status_to_string(http_status_t status)
 }
 
 static inline bool
-http_status_is_success(http_status_t status)
+http_status_is_success(http_status_t _status)
 {
+    const unsigned status = (unsigned)_status;
     return status >= 200 && status < 300;
 }
 
 static inline bool
-http_status_is_redirect(http_status_t status)
+http_status_is_redirect(http_status_t _status)
 {
+    const unsigned status = (unsigned)_status;
     return status >= 300 && status < 400;
 }
 
 static inline bool
-http_status_is_client_error(http_status_t status)
+http_status_is_client_error(http_status_t _status)
 {
+    const unsigned status = (unsigned)_status;
     return status >= 400 && status < 500;
 }
 
 static inline bool
-http_status_is_server_error(http_status_t status)
+http_status_is_server_error(http_status_t _status)
 {
+    const unsigned status = (unsigned)_status;
     return status >= 500 && status < 600;
 }
 
 static inline bool
-http_status_is_error(http_status_t status)
+http_status_is_error(http_status_t _status)
 {
+    const unsigned status = (unsigned)_status;
     return status >= 400 && status < 600;
 }
 
