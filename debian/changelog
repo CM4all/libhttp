@@ -2,7 +2,7 @@ libcm4all-http (1.2.2) unstable; urgency=low
 
   * status: C++ compatibility
 
- --   
+ -- Max Kellermann <mk@cm4all.com>  Fri, 27 Dec 2013 16:38:48 -0000
 
 libcm4all-http (1.2.1) unstable; urgency=low
 
