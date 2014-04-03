@@ -1,4 +1,4 @@
-AUTOMAKE_OPTIONS = foreign 1.11 dist-bzip2
+AUTOMAKE_OPTIONS = foreign 1.11
 
 AM_CPPFLAGS += -Iinclude
 
