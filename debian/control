@@ -3,8 +3,7 @@ Section: non-free/libs
 Priority: optional
 Maintainer: Max Kellermann <mk@cm4all.com>
 Build-Depends: debhelper (>= 7),
- autoconf (>= 2.61), automake (>= 1.11),
- doxygen (>= 1.2)
+ autoconf (>= 2.61), automake (>= 1.11)
 Standards-Version: 3.9.1
 
 Package: libcm4all-http-dev
