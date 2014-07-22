@@ -7,6 +7,7 @@
 const char *http_status_to_string_data[6][40] = {
     [1] = {
         [HTTP_STATUS_CONTINUE - 100] = "100 Continue",
+        [HTTP_STATUS_SWITCHING_PROTOCOLS - 100] = "101 Switching Protocols",
     },
     [2] = {
         [HTTP_STATUS_OK - 200] = "200 OK",
