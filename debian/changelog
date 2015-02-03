@@ -1,3 +1,9 @@
+libcm4all-http (1.2.4) unstable; urgency=low
+
+  * 
+
+ --   
+
 libcm4all-http (1.2.3) unstable; urgency=low
 
   * status: support "101 Switching Protocols" (RFC 6455)
