@@ -1,3 +1,9 @@
+libcm4all-http (1.2.5) unstable; urgency=low
+
+  * 
+
+ --   
+
 libcm4all-http (1.2.4) unstable; urgency=low
 
   * header: optimize http_header_is_hop_by_hop()

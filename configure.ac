@@ -1,6 +1,6 @@
 AC_PREREQ(2.60)
-AC_INIT(CM4all libhttp, 1.2.4, mk@cm4all.com, libcm4all-http)
-AC_COPYRIGHT(Copyright 2006-2014 Content Management AG)
+AC_INIT(CM4all libhttp, 1.2.5, mk@cm4all.com, libcm4all-http)
+AC_COPYRIGHT(Copyright 2006-2015 Content Management AG)
 AC_CONFIG_SRCDIR(src/method.c)
 AC_CONFIG_AUX_DIR(build)
 AM_INIT_AUTOMAKE([foreign 1.11 subdir-objects silent-rules])
