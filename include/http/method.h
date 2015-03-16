@@ -27,6 +27,9 @@ typedef enum {
     HTTP_METHOD_LOCK,
     HTTP_METHOD_UNLOCK,
 
+    /* RFC 5789 */
+    HTTP_METHOD_PATCH,
+
     HTTP_METHOD_INVALID,
 } http_method_t;
 

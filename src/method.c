@@ -21,4 +21,7 @@ const char *http_method_to_string_data[HTTP_METHOD_INVALID] = {
     [HTTP_METHOD_MOVE] = "MOVE",
     [HTTP_METHOD_LOCK] = "LOCK",
     [HTTP_METHOD_UNLOCK] = "UNLOCK",
+
+    /* RFC 5789 */
+    [HTTP_METHOD_PATCH] = "PATCH",
 };
