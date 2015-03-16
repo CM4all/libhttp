@@ -3,7 +3,7 @@ libcm4all-http (1.2.5) unstable; urgency=low
   * method: support PATCH (RFC 5789)
   * status: "426 Upgrade Required" (RFC 7231)
 
- --   
+ -- Max Kellermann <mk@cm4all.com>  Mon, 16 Mar 2015 14:58:09 -0000
 
 libcm4all-http (1.2.4) unstable; urgency=low
 
