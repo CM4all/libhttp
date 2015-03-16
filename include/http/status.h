@@ -73,6 +73,11 @@ typedef enum {
     HTTP_STATUS_FAILED_DEPENDENCY = 424,
 
     /**
+     * @see RFC 7231 (HTTP 1.1)
+     */
+    HTTP_STATUS_UPGRADE_REQUIRED = 426,
+
+    /**
      * @see RFC 6585 (Additional HTTP Status Codes)
      */
     HTTP_STATUS_PRECONDITION_REQUIRED = 428,
