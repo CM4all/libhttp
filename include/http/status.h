@@ -110,18 +110,18 @@ typedef enum {
     HTTP_STATUS_NETWORK_AUTHENTICATION_REQUIRED = 511,
 } http_status_t;
 
-extern const char *http_status_to_string_data[6][40];
+extern const char *http_status_to_string_data_6_60[6][60];
 
 static inline bool
 http_status_is_valid(http_status_t _status)
 {
     const unsigned status = (unsigned)_status;
 
-    return (status / 100) < sizeof(http_status_to_string_data) /
-        sizeof(http_status_to_string_data[0]) &&
-        status % 100 < sizeof(http_status_to_string_data[0]) /
-        sizeof(http_status_to_string_data[0][0]) &&
-        http_status_to_string_data[status / 100][status % 100] != NULL;
+    return (status / 100) < sizeof(http_status_to_string_data_6_60) /
+        sizeof(http_status_to_string_data_6_60[0]) &&
+        status % 100 < sizeof(http_status_to_string_data_6_60[0]) /
+        sizeof(http_status_to_string_data_6_60[0][0]) &&
+        http_status_to_string_data_6_60[status / 100][status % 100] != NULL;
 }
 
 static inline const char *
@@ -129,7 +129,7 @@ http_status_to_string(http_status_t status)
 {
     assert(http_status_is_valid(status));
 
-    return http_status_to_string_data[status / 100][status % 100];
+    return http_status_to_string_data_6_60[status / 100][status % 100];
 }
 
 static inline bool

@@ -4,7 +4,7 @@
 
 #include <http/status.h>
 
-const char *http_status_to_string_data[6][40] = {
+const char *http_status_to_string_data_6_60[6][60] = {
     [1] = {
         [HTTP_STATUS_CONTINUE - 100] = "100 Continue",
         [HTTP_STATUS_SWITCHING_PROTOCOLS - 100] = "101 Switching Protocols",
