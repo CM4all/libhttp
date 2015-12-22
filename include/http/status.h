@@ -92,6 +92,11 @@ typedef enum {
      */
     HTTP_STATUS_REQUEST_HEADER_FIELDS_TOO_LARGE = 431,
 
+    /**
+     * @see https://datatracker.ietf.org/doc/draft-ietf-httpbis-legally-restricted-status/
+     */
+    HTTP_STATUS_UNAVAILABLE_FOR_LEGAL_REASONS = 451,
+
     HTTP_STATUS_INTERNAL_SERVER_ERROR = 500,
     HTTP_STATUS_NOT_IMPLEMENTED = 501,
     HTTP_STATUS_BAD_GATEWAY = 502,

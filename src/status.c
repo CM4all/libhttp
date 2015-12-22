@@ -55,6 +55,7 @@ const char *http_status_to_string_data_6_60[6][60] = {
         [HTTP_STATUS_PRECONDITION_REQUIRED - 400] = "428 Precondition Required",
         [HTTP_STATUS_TOO_MANY_REQUESTS - 400] = "429 Too Many Requests",
         [HTTP_STATUS_REQUEST_HEADER_FIELDS_TOO_LARGE - 400] = "431 Request Header Fields Too Large",
+        [HTTP_STATUS_UNAVAILABLE_FOR_LEGAL_REASONS - 400] = "451 Unavailable for Legal Reasons",
     },
     [5] = {
         [HTTP_STATUS_INTERNAL_SERVER_ERROR - 500] = "500 Internal Server Error",
