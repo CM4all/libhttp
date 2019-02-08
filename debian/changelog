@@ -3,7 +3,7 @@ libcm4all-http (1.2.6) unstable; urgency=low
   * status: add "451 Unavailable for Legal Reasons"
   * compile with -fPIC
 
- --   
+ -- Max Kellermann <mk@cm4all.com>  Fri, 08 Feb 2019 09:14:58 +0100
 
 libcm4all-http (1.2.5) unstable; urgency=low
 
