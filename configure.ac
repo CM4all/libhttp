@@ -23,6 +23,8 @@ AM_CPPFLAGS="-D_REENTRANT"
 
 AM_CFLAGS="$AM_CFLAGS -Wmissing-prototypes -Wwrite-strings -Wcast-qual -Wfloat-equal -Wshadow -Wpointer-arith -Wbad-function-cast -Wsign-compare -Waggregate-return -Wmissing-declarations -Wmissing-noreturn -Wpacked -Wredundant-decls -Wnested-externs -Winline -Wdisabled-optimization -Wno-long-long -Wstrict-prototypes -Wundef -pedantic"
 
+AM_CFLAGS="$AM_CFLAGS -fPIC"
+
 dnl
 dnl DEBUG
 dnl
