@@ -1,3 +1,9 @@
+libcm4all-http (1.2.7) unstable; urgency=low
+
+  * 
+
+ --   
+
 libcm4all-http (1.2.6) unstable; urgency=low
 
   * status: add "451 Unavailable for Legal Reasons"
