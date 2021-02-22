@@ -1,6 +1,7 @@
 project('libhttp', 'c', version: '1.2.7',
   default_options: [
     'c_std=c99',
+    'warning_level=3',
   ],
 )
 
@@ -17,8 +18,6 @@ pkg_mod = import('pkgconfig')
 
 common_flags = [
   '-D_REENTRANT', '-D_GNU_SOURCE',
-  '-Wall',
-  '-Wextra',
   '-Wwrite-strings', '-Wcast-qual', '-Wcast-align', '-Wfloat-equal',
   '-Wshadow', '-Wpointer-arith', '-Wsign-compare',
   '-Wmissing-declarations', '-Wmissing-noreturn', '-Wmissing-format-attribute',
@@ -32,7 +31,6 @@ add_global_arguments(common_flags,
   '-Waggregate-return',
   '-Wredundant-decls', '-Wno-long-long', '-Wundef',
   '-Wnested-externs',
-  '-pedantic',
   language: 'c')
 
 inc = include_directories('include')
