@@ -4,7 +4,7 @@ libcm4all-http (1.2.7) unstable; urgency=low
   * build with Meson and Ninja
   * debian: use debhelper 12
 
- --   
+ -- Max Kellermann <mk@cm4all.com>  Mon, 22 Feb 2021 08:56:57 +0100
 
 libcm4all-http (1.2.6) unstable; urgency=low
 
