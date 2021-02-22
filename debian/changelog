@@ -1,5 +1,6 @@
 libcm4all-http (1.2.7) unstable; urgency=low
 
+  * method: support REPORT (RFC 3253)
   * build with Meson and Ninja
   * debian: use debhelper 10
 
