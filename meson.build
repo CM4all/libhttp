@@ -45,7 +45,7 @@ test_cflags = test_common_flags + [
   '-Wstrict-prototypes',
 ]
 
-add_global_arguments(common_flags, language: 'c')
+add_project_arguments(common_flags, language: 'c')
 add_project_arguments(c_compiler.get_supported_arguments(test_cflags), language: 'c')
 
 inc = include_directories('include')
