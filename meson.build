@@ -17,19 +17,26 @@ common_flags = [
 ]
 
 test_common_flags = [
-  '-Wwrite-strings', '-Wcast-qual', '-Wcast-align', '-Wfloat-equal',
+  '-Wcast-align',
+  '-Wcast-qual',
+  '-Wfloat-equal',
+  '-Wmissing-declarations',
+  '-Wmissing-noreturn',
+  '-Wmissing-format-attribute',
+  '-Wredundant-decls',
   '-Wshadow',
-  '-Wmissing-declarations', '-Wmissing-noreturn', '-Wmissing-format-attribute',
-  '-Wredundant-decls', '-Wundef',
   '-Wunused',
+  '-Wwrite-strings',
 ]
 
 test_cflags = test_common_flags + [
-  '-Wmissing-prototypes', '-Wstrict-prototypes',
-  '-Wbad-function-cast',
   '-Waggregate-return',
-  '-Wredundant-decls', '-Wundef',
+  '-Wbad-function-cast',
+  '-Wmissing-prototypes',
   '-Wnested-externs',
+  '-Wredundant-decls',
+  '-Wstrict-prototypes',
+  '-Wundef',
 ]
 
 add_global_arguments(common_flags, language: 'c')
