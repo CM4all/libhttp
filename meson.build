@@ -1,4 +1,4 @@
-project('libhttp', 'c', version: '1.2.8',
+project('libhttp', 'c', version: '1.3',
   meson_version: '>= 0.49',
   default_options: [
     'c_std=c99',
