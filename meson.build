@@ -1,16 +1,12 @@
 project('libhttp', 'c', version: '1.2.7',
+  meson_version: '>= 0.49',
   default_options: [
     'c_std=c99',
     'warning_level=3',
   ],
 )
 
-# TODO: use get_option('b_ndebug'), but that doesn't work with Meson 0.37.1
-if get_option('buildtype') == 'debug'
-  debug = true
-else
-  debug = false
-endif
+debug = get_option('b_ndebug') != 'true'
 
 cc = meson.get_compiler('c')
 
