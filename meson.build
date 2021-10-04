@@ -59,6 +59,8 @@ libhttp = static_library(
   install: true,
 )
 
+libhttp_dep = declare_dependency(link_with: libhttp)
+
 pkg_mod.generate(
   libhttp,
   version: meson.project_version(),
