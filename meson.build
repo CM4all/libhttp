@@ -8,12 +8,15 @@ project('libhttp', 'c', version: '1.3',
 
 debug = get_option('b_ndebug') != 'true'
 
-cc = meson.get_compiler('c')
+c_compiler = meson.get_compiler('c')
 
 pkg_mod = import('pkgconfig')
 
 common_flags = [
   '-D_REENTRANT', '-D_GNU_SOURCE',
+]
+
+test_common_flags = [
   '-Wwrite-strings', '-Wcast-qual', '-Wcast-align', '-Wfloat-equal',
   '-Wshadow', '-Wpointer-arith', '-Wsign-compare',
   '-Wmissing-declarations', '-Wmissing-noreturn', '-Wmissing-format-attribute',
@@ -21,13 +24,16 @@ common_flags = [
   '-Wunused',
 ]
 
-add_global_arguments(common_flags,
+test_cflags = test_common_flags + [
   '-Wmissing-prototypes', '-Wstrict-prototypes',
   '-Wbad-function-cast',
   '-Waggregate-return',
   '-Wredundant-decls', '-Wno-long-long', '-Wundef',
   '-Wnested-externs',
-  language: 'c')
+]
+
+add_global_arguments(common_flags, language: 'c')
+add_project_arguments(c_compiler.get_supported_arguments(test_cflags), language: 'c')
 
 inc = include_directories('include')
 
