@@ -19,14 +19,21 @@ common_flags = [
 test_common_flags = [
   '-Wcast-align',
   '-Wcast-qual',
+  '-Wdouble-promotion',
   '-Wfloat-equal',
   '-Wmissing-declarations',
   '-Wmissing-noreturn',
   '-Wmissing-format-attribute',
   '-Wredundant-decls',
   '-Wshadow',
+  '-Wundef',
   '-Wunused',
+  '-Wvla',
   '-Wwrite-strings',
+
+  # clang specific warning options:
+  '-Wunreachable-code-aggressive',
+  '-Wused-but-marked-unused',
 ]
 
 test_cflags = test_common_flags + [
@@ -36,7 +43,6 @@ test_cflags = test_common_flags + [
   '-Wnested-externs',
   '-Wredundant-decls',
   '-Wstrict-prototypes',
-  '-Wundef',
 ]
 
 add_global_arguments(common_flags, language: 'c')
