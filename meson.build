@@ -20,7 +20,7 @@ test_common_flags = [
   '-Wwrite-strings', '-Wcast-qual', '-Wcast-align', '-Wfloat-equal',
   '-Wshadow',
   '-Wmissing-declarations', '-Wmissing-noreturn', '-Wmissing-format-attribute',
-  '-Wredundant-decls', '-Wno-long-long', '-Wundef',
+  '-Wredundant-decls', '-Wundef',
   '-Wunused',
 ]
 
@@ -28,7 +28,7 @@ test_cflags = test_common_flags + [
   '-Wmissing-prototypes', '-Wstrict-prototypes',
   '-Wbad-function-cast',
   '-Waggregate-return',
-  '-Wredundant-decls', '-Wno-long-long', '-Wundef',
+  '-Wredundant-decls', '-Wundef',
   '-Wnested-externs',
 ]
 
