@@ -60,6 +60,11 @@ typedef enum {
      */
     HTTP_STATUS_MULTI_STATUS = 207,
 
+    /**
+     * @see RFC 5842 (Binding Extensiosn to WebDAV)
+     */
+    HTTP_STATUS_ALREADY_REPORTED = 208,
+
     HTTP_STATUS_MULTIPLE_CHOICES = 300,
     HTTP_STATUS_MOVED_PERMANENTLY = 301,
     HTTP_STATUS_FOUND = 302,
