@@ -101,6 +101,7 @@ const char *http_status_to_string_data_6_60[6][60] = {
         [HTTP_STATUS_HTTP_VERSION_NOT_SUPPORTED - 500] = "505 HTTP Version Not Supported",
         [HTTP_STATUS_VARIANT_ALSO_NEGOTIATES - 500] = "506 Variant Also Negotiates",
         [HTTP_STATUS_INSUFFICIENT_STORAGE - 500] = "507 Insufficient Storage",
+        [HTTP_STATUS_LOOP_DETECTED - 500] = "508 Loop Detected",
         [HTTP_STATUS_NETWORK_AUTHENTICATION_REQUIRED - 500] = "511 Network Authentication Required",
     },
 };

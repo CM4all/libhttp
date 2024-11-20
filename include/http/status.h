@@ -170,6 +170,11 @@ typedef enum {
     HTTP_STATUS_INSUFFICIENT_STORAGE = 507,
 
     /**
+     * @see RFC 5842 (Binding Extensions to WebDAV)
+     */
+    HTTP_STATUS_LOOP_DETECTED = 508,
+
+    /**
      * @see RFC 6585 (Additional HTTP Status Codes)
      */
     HTTP_STATUS_NETWORK_AUTHENTICATION_REQUIRED = 511,
