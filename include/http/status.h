@@ -103,6 +103,11 @@ typedef enum {
     HTTP_STATUS_I_M_A_TEAPOT = 418,
 
     /**
+     * @see RFC 9110 (HTTP Semantics)
+     */
+    HTTP_STATUS_MISDIRECTED_REQUEST = 421,
+
+    /**
      * @see RFC 4918 (WebDAV)
      */
     HTTP_STATUS_UNPROCESSABLE_ENTITY = 422,

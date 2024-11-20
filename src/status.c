@@ -81,6 +81,7 @@ const char *http_status_to_string_data_6_60[6][60] = {
         [HTTP_STATUS_REQUESTED_RANGE_NOT_SATISFIABLE - 400] = "416 Requested Range Not Satisfiable",
         [HTTP_STATUS_EXPECTATION_FAILED - 400] = "417 Expectation failed",
         [HTTP_STATUS_I_M_A_TEAPOT - 400] = "418 I'm a teapot",
+        [HTTP_STATUS_MISDIRECTED_REQUEST - 400] = "421 Misdirected Request",
         [HTTP_STATUS_UNPROCESSABLE_ENTITY - 400] = "422 Unprocessable Entity",
         [HTTP_STATUS_LOCKED - 400] = "423 Locked",
         [HTTP_STATUS_FAILED_DEPENDENCY - 400] = "424 Failed Dependency",
