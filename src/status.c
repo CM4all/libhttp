@@ -99,6 +99,7 @@ const char *http_status_to_string_data_6_60[6][60] = {
         [HTTP_STATUS_SERVICE_UNAVAILABLE - 500] = "503 Service Unavailable",
         [HTTP_STATUS_GATEWAY_TIMEOUT - 500] = "504 Gateway Timeout",
         [HTTP_STATUS_HTTP_VERSION_NOT_SUPPORTED - 500] = "505 HTTP Version Not Supported",
+        [HTTP_STATUS_VARIANT_ALSO_NEGOTIATES - 500] = "506 Variant Also Negotiates",
         [HTTP_STATUS_INSUFFICIENT_STORAGE - 500] = "507 Insufficient Storage",
         [HTTP_STATUS_NETWORK_AUTHENTICATION_REQUIRED - 500] = "511 Network Authentication Required",
     },

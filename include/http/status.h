@@ -160,6 +160,11 @@ typedef enum {
     HTTP_STATUS_HTTP_VERSION_NOT_SUPPORTED = 505,
 
     /**
+     * @see RFC 2295 (Transparent Content Negotiation in HTTP)
+     */
+    HTTP_STATUS_VARIANT_ALSO_NEGOTIATES = 506,
+
+    /**
      * @see RFC 4918 (WebDAV)
      */
     HTTP_STATUS_INSUFFICIENT_STORAGE = 507,
