@@ -49,6 +49,7 @@ const char *http_status_to_string_data_6_60[6][60] = {
         [HTTP_STATUS_PARTIAL_CONTENT - 200] = "206 Partial Content",
         [HTTP_STATUS_MULTI_STATUS - 200] = "207 Multi-Status",
         [HTTP_STATUS_ALREADY_REPORTED - 200] = "208 Already Reported",
+        [HTTP_STATUS_IM_USED - 200] = "226 IM Used",
     },
     [3] = {
         [HTTP_STATUS_MULTIPLE_CHOICES - 300] = "300 Multiple Choices",

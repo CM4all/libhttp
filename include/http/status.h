@@ -65,6 +65,11 @@ typedef enum {
      */
     HTTP_STATUS_ALREADY_REPORTED = 208,
 
+    /**
+     * @see RFC 3229 (Delta Encoding in HTTP)
+     */
+    HTTP_STATUS_IM_USED = 226,
+
     HTTP_STATUS_MULTIPLE_CHOICES = 300,
     HTTP_STATUS_MOVED_PERMANENTLY = 301,
     HTTP_STATUS_FOUND = 302,
