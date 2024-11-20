@@ -85,6 +85,7 @@ const char *http_status_to_string_data_6_60[6][60] = {
         [HTTP_STATUS_UNPROCESSABLE_ENTITY - 400] = "422 Unprocessable Entity",
         [HTTP_STATUS_LOCKED - 400] = "423 Locked",
         [HTTP_STATUS_FAILED_DEPENDENCY - 400] = "424 Failed Dependency",
+        [HTTP_STATUS_TOO_EARLY - 400] = "425 Too Early",
         [HTTP_STATUS_UPGRADE_REQUIRED - 400] = "426 Upgrade Required",
         [HTTP_STATUS_PRECONDITION_REQUIRED - 400] = "428 Precondition Required",
         [HTTP_STATUS_TOO_MANY_REQUESTS - 400] = "429 Too Many Requests",

@@ -123,6 +123,11 @@ typedef enum {
     HTTP_STATUS_FAILED_DEPENDENCY = 424,
 
     /**
+     * @see RFC 8470 (Using Early Data in HTTP)
+     */
+    HTTP_STATUS_TOO_EARLY = 425,
+
+    /**
      * @see RFC 7231 (HTTP 1.1)
      */
     HTTP_STATUS_UPGRADE_REQUIRED = 426,
