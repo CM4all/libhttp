@@ -175,6 +175,11 @@ typedef enum {
     HTTP_STATUS_LOOP_DETECTED = 508,
 
     /**
+     * @see RFC 2774 (An HTTP Extension Framework)
+     */
+    HTTP_STATUS_NOT_EXTENDED = 510,
+
+    /**
      * @see RFC 6585 (Additional HTTP Status Codes)
      */
     HTTP_STATUS_NETWORK_AUTHENTICATION_REQUIRED = 511,
