@@ -44,6 +44,9 @@ typedef enum {
     // added in RFC 2518, removed in RFC 4918 (WebDAV)
     HTTP_STATUS_PROCESSING = 102,
 
+    // RFC 8297, HTTP/2 only
+    HTTP_STATUS_EARLY_HINTS = 103,
+
     HTTP_STATUS_OK = 200,
     HTTP_STATUS_CREATED = 201,
     HTTP_STATUS_ACCEPTED = 202,
