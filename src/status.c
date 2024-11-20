@@ -59,6 +59,7 @@ const char *http_status_to_string_data_6_60[6][60] = {
         [HTTP_STATUS_NOT_MODIFIED - 300] = "304 Not Modified",
         [HTTP_STATUS_USE_PROXY - 300] = "305 Use Proxy",
         [HTTP_STATUS_TEMPORARY_REDIRECT - 300] = "307 Temporary Redirect",
+        [HTTP_STATUS_PERMANENT_REDIRECT - 300] = "308 Permanent Redirect",
     },
     [4] = {
         [HTTP_STATUS_BAD_REQUEST - 400] = "400 Bad Request",
