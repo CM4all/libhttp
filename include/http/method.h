@@ -8,6 +8,13 @@
 #include <assert.h>
 
 typedef enum {
+	/* The values below are part of the WAS protocol (see
+	   https://github.com/CM4all/libwas) and the logging protocol
+	   (see
+	   https://github.com/CM4all/libcommon/blob/master/src/net/log/Protocol.hxx));
+	   it must be kept stable and in this order.  Add new values
+	   at the end, right before #HTTP_METHOD_INVALID. */
+
 	HTTP_METHOD_NULL = 0,
 	HTTP_METHOD_HEAD,
 	HTTP_METHOD_GET,
