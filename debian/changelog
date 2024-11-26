@@ -13,7 +13,7 @@ libcm4all-http (1.3) unstable; urgency=low
   * status "508 Loop Detected"
   * status "510 Not Extended"
 
- --   
+ -- Max Kellermann <mk@cm4all.com>  Tue, 26 Nov 2024 18:11:39 +0100
 
 libcm4all-http (1.2.7) unstable; urgency=low
 
