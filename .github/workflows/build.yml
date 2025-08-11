@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - id: cache-ccache
         uses: hendrikmuhs/ccache-action@v1
         with:
